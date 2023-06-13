@@ -71,10 +71,10 @@ h1, p {
 }
 
 .btn-color-randomize:hover {
-    color: white;
-    background-color: rgb(70, 70, 70);
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(162, 95%, 40%);
 }
 
-.btn-color-randomize:focus-within {
+.btn-color-randomize:active {
     transform: translateY(2px);
 }
