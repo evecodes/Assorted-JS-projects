@@ -28,6 +28,11 @@ h1, h2, p {
     grid-auto-rows: min-content;
     justify-content: center;
     gap: 2rem;
+    padding-bottom: 6rem;
+}
+
+.project-box-flex {
+    display: flex;
 }
 
 .container-flex {
@@ -75,7 +80,7 @@ h1, h2, p {
     text-shadow: rgb(12, 1, 22) 0 0 15px;
 }
 
-.btn-color-randomize {
+.btn-activate {
     outline: transparent;
     border: transparent;
     background-color: rgb(197, 197, 197);
@@ -85,11 +90,38 @@ h1, h2, p {
     cursor: pointer;
 }
 
-.btn-color-randomize:hover {
+.btn-activate:hover {
     color: hsl(0, 0%, 100%);
     background-color: hsl(162, 95%, 40%);
 }
 
-.btn-color-randomize:active {
+.btn-activate:active {
     transform: translateY(2px);
+}
+
+
+/*Simple counter*/
+
+.box-project2 {
+    width: min(100% - 3rem, 65ch);
+    margin-inline: auto;    
+}
+
+.counter-box {
+    max-width: 60%;
+    padding: 2rem 0 2rem 0;
+    background-color: grey;
+    margin-inline: auto;
+}
+
+.counter-box > p {
+    color: white;
+    font-size: 2rem;
+}
+
+.button-box {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 2rem;
 }
