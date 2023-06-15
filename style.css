@@ -1,3 +1,8 @@
+:root {
+    --hsl-base: black;
+    --hsl-random: hsl(0, 0%, 0%);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +13,7 @@ h1 {
     margin-top: 1rem;
 }
 
-h1, p {
+h1, h2, p {
     text-align: center;
 }
 
@@ -51,13 +56,23 @@ h1, p {
 
 .box-color-rgb, .box-color-hsl {
     min-height: 100%;
-    min-width: 100%;
-    background-color: black;
+    min-width: 100%;    
     margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-color-rgb {
+    background-color: black;
+}
+
+.box-color-hsl {
+    background-color: var(--hsl-random);
 }
 
 .text-randomizer {
     color: white;
+    text-shadow: rgb(12, 1, 22) 0 0 15px;
 }
 
 .btn-color-randomize {

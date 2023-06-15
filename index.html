@@ -16,17 +16,17 @@
         <section>
             <h1>JS shenanigans</h1>
             <div>
-                <p class="project-title">Project 1 - color randomizer</p>
+                <h2 class="project-title">Project 1 - color randomizer</h2>
                 <div class="project-box-grid">
                     <div class="container-color-randomizer container-flex flex-column flex-space-between flex-align-center">
-                        <div class="box-color-rgb">
-                            <p class="text-randomizer" id="randomize-rgb">test</p>
+                        <div class="box-color-rgb container-flex">
+                            <p class="text-randomizer rgb-number">RGB randomizer</p>
                         </div>
-                        <button class="btn-color-randomize">Randomize!</button>
+                        <button class="btn-color-randomize" id="randomize-rgb">Randomize!</button>
                     </div>
                     <div class="container-color-randomizer container-flex flex-column flex-space-between flex-align-center">
-                        <div class="box-color-hsl">
-                            <p class="text-randomizer hsl-number">Start</p>
+                        <div class="box-color-hsl container-flex" data-color="black">
+                            <p class="text-randomizer hsl-number">HSL randomizer</p>
                         </div>
                         <button class="btn-color-randomize" id="randomize-hsl">Randomize!</button>
                     </div>                    
