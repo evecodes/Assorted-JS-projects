@@ -110,12 +110,11 @@ h1, h2, p {
 .counter-box {
     max-width: 60%;
     padding: 2rem 0 2rem 0;
-    background-color: grey;
+    background-color: rgb(145, 145, 145);
     margin-inline: auto;
 }
 
-.counter-box > p {
-    color: white;
+.counter-box > p {    
     font-size: 2rem;
 }
 
@@ -124,4 +123,16 @@ h1, h2, p {
     gap: 0.5rem;
     justify-content: center;
     margin-top: 2rem;
+}
+
+[data-number-color="zero"] {
+    color: white;
+}
+
+[data-number-color="positive"] {
+    color: rgb(8, 255, 8);
+}
+
+[data-number-color="negative"] {
+    color: rgb(255, 0, 0);
 }

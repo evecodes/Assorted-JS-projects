@@ -41,3 +41,30 @@ function generateHslColors() {
 }
 
 btnRandomizeHsl.addEventListener("click", generateHslColors);
+
+
+//Simple counter//
+const counterNumber = document.querySelector(".counter-value");
+const counterBtns = document.querySelectorAll(".btn-counter");
+
+let count = 0;
+
+counterBtns.forEach(addListener => {
+    addListener.addEventListener("click", e => {
+        const btnStyle = e.currentTarget.classList;
+        if (btnStyle.contains("btn-increase")){
+            count++;
+        } else if (btnStyle.contains("btn-decrease")){
+            count--;
+        } else {
+            count = 0;
+        }
+
+        count < 0 ? counterNumber.setAttribute('data-number-color', 'negative') : 
+        count > 0 ? counterNumber.setAttribute('data-number-color', 'positive') : 
+        count === 0 ? counterNumber.setAttribute('data-number-color', 'zero') : 
+        counterNumber.setAttribute('data-number-color', 'zero');
+        
+        counterNumber.textContent = count;
+    })
+})
