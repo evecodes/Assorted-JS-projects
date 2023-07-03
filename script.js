@@ -68,3 +68,6 @@ counterBtns.forEach(addListener => {
         counterNumber.textContent = count;
     })
 })
+
+
+//Slider - single item slot//
