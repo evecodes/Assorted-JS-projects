@@ -86,7 +86,7 @@ h1, h2, p {
     background-color: rgb(197, 197, 197);
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 0.2rem;
-    width: min-content;
+    width: max-content;
     cursor: pointer;
 }
 
@@ -99,6 +99,9 @@ h1, h2, p {
     transform: translateY(2px);
 }
 
+.btn-margin {
+    margin-top: 0.5rem;
+}
 
 /*Simple counter*/
 

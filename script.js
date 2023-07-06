@@ -71,3 +71,74 @@ counterBtns.forEach(addListener => {
 
 
 //Slider - single item slot//
+//Local data//
+const singleSliderSlides = [
+    {
+        id: 1,
+        img: "imgs/photo-dummy-01.png",
+        title: "Mister Muffin",
+        text: "Yes, hi, hello. This is a typing cat. Wonderful, isn't it? Now what to type here, ah yes, hm. Feed me please.",
+    },
+    {
+        id: 2,
+        img: "imgs/photo-dummy-02.png",
+        title: "Komo",
+        text: "I like cookies.",
+    },    
+    {
+        id: 3,
+        img: "imgs/photo-dummy-03.png",
+        title: "Circle thing",
+        text: "I'm the moon, nice, no? I like to stargaze.",
+    },    
+    {
+        id: 4,
+        img: "imgs/photo-dummy-04.png",
+        title: "Tree",
+        text: "... ... ... (I'm a tree, I can't talk you silly)",
+    },    
+    {
+        id: 5,
+        img: "imgs/photo-dummy-05.png",
+        title: "Pira and Mid",
+        text: "Why are you always first in frame? I deserve space too ya know.",
+    },    
+];
+
+//Slider parts//
+const img = document.querySelector("#avatar-photo");
+const title = document.querySelector("#title-text");
+const text = document.querySelector("#description-text");
+
+const btnPrevious = document.querySelector(".btn-previous");
+const btnNext = document.querySelector(".btn-next");
+const btnRandom = document.querySelector(".btn-random");
+
+let slideNumber = 0;
+
+window.addEventListener('DOMContentLoaded', e => {
+    updateCurrentSlide(slideNumber); 
+});
+
+function updateCurrentSlide(slideNumber){
+    const slideItem = singleSliderSlides[slideNumber];
+    img.src = slideItem.img;
+    title.textContent = slideItem.title;
+    text.textContent = slideItem.text;
+}
+
+btnNext.addEventListener('click', e=> {
+    slideNumber++;
+    if (slideNumber > singleSliderSlides.length - 1) {
+        slideNumber = 0;
+    }
+    updateCurrentSlide(slideNumber);
+});
+
+btnPrevious.addEventListener('click', e=> {
+    slideNumber--;
+    if(slideNumber < 0) {
+        slideNumber = singleSliderSlides.length -1;
+    }
+    updateCurrentSlide(slideNumber);
+});
