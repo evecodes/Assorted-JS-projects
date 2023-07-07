@@ -18,3 +18,5 @@ Update 05 - More css and js for project 2 added.
 Update 06 - Base for project 3 added.
 
 Update 07 - More css and js for project 3 added.
+
+Update 08 - More project 3 js.

@@ -71,7 +71,7 @@ counterBtns.forEach(addListener => {
 
 
 //Slider - single item slot//
-//Local data//
+//Local data for the slides//
 const singleSliderSlides = [
     {
         id: 1,
@@ -116,23 +116,25 @@ const btnRandom = document.querySelector(".btn-random");
 
 let slideNumber = 0;
 
+//Functionality for data and slide update//
 window.addEventListener('DOMContentLoaded', e => {
     updateCurrentSlide(slideNumber); 
 });
 
-function updateCurrentSlide(slideNumber){
+function updateCurrentSlide(){
     const slideItem = singleSliderSlides[slideNumber];
     img.src = slideItem.img;
     title.textContent = slideItem.title;
     text.textContent = slideItem.text;
 }
 
+//Slider buttons//
 btnNext.addEventListener('click', e=> {
     slideNumber++;
     if (slideNumber > singleSliderSlides.length - 1) {
         slideNumber = 0;
     }
-    updateCurrentSlide(slideNumber);
+    updateCurrentSlide();
 });
 
 btnPrevious.addEventListener('click', e=> {
@@ -140,5 +142,10 @@ btnPrevious.addEventListener('click', e=> {
     if(slideNumber < 0) {
         slideNumber = singleSliderSlides.length -1;
     }
-    updateCurrentSlide(slideNumber);
+    updateCurrentSlide();
+});
+
+btnRandom.addEventListener('click', e=> {
+    slideNumber = Math.floor(Math.random() * singleSliderSlides.length);
+    updateCurrentSlide();
 });
