@@ -152,3 +152,21 @@ btnRandom.addEventListener('click', e=> {
 
 
 //Modal//
+const buttonCloseOne = document.querySelector(".btn-close-1");
+const buttonModalOne = document.querySelector(".btn-modal-1");
+const modalOne = document.querySelector(".modal-type-1");
+const modalOneBackground = document.querySelector(".modal-background")
+
+buttonModalOne.addEventListener('click', e=> {
+    modalOne.setAttribute('data-modal-active', 'on');
+});
+
+buttonCloseOne.addEventListener('click', e=> {
+    modalOne.setAttribute('data-modal-active', 'off');
+});
+
+window.onclick = function closeModal(poke) {
+    if (poke.target === modalOneBackground) {
+        modalOne.setAttribute('data-modal-active', 'off');
+    }
+};

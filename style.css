@@ -193,7 +193,7 @@ h1, h2, p {
     padding: 1.25rem 1.5rem 1.25rem 1.5rem;
 }
 
-.btn-close {
+.btn-close-1 {
     position: absolute;
     top: 5%;
     right: 3%
@@ -215,6 +215,7 @@ h1, h2, p {
     justify-content: center;
     max-width: 500px;
     width: 65%;
+    min-height: 15rem;
     height: 40%;
     background-color: white;
     border-radius: 0.5rem;
@@ -222,7 +223,10 @@ h1, h2, p {
     font-size: 1.1rem;
 }
 
-.modal-type-1 {
+[data-modal-active = "off"]{
     display: none;
 }
 
+[data-modal-active = "on"]{
+    display: flex;
+}
