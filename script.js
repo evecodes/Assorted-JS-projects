@@ -149,3 +149,6 @@ btnRandom.addEventListener('click', e=> {
     slideNumber = Math.floor(Math.random() * singleSliderSlides.length);
     updateCurrentSlide();
 });
+
+
+//Modal//

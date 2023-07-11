@@ -33,7 +33,7 @@
         </section>
         <section>
             <h2 class="project-title">Project 2 - Simple counter</h2>            
-            <div class="box-project2">
+            <div class="project-box">
                 <div class="counter-box">
                     <p>Counter:</p>
                     <p class="counter-value" data-number-color="zero">0</p>
@@ -60,6 +60,29 @@
                 </div>
                 <button class="btn-activate btn-margin btn-random">Random slide</button>
             </div>
+        </section>
+        <section>
+            <h2 class="project-title">Project 4 - Modal</h2>
+            <div class="project-box">
+                <!-- Modal with div fixed -->
+                <div>
+                    <div class="modal-background modal-type-1" data-modal-active="off">
+                        <div class="modal-message">                            
+                            <p>This is a modal made with a modal message div in a modal background div. And you can close it with the button, or by clicking the colored background behind it.</p>
+                            <button class="btn-activate btn-close"><img class="btn-arrow" src="icons/window-close-white.svg" alt="Close message button"></button>                           
+                        </div>
+                    </div>
+                    <button class="btn-activate btn-modal">Click here</button> 
+                </div>
+                <!-- Modal with :modal -->
+                <div>
+                    <button class="btn-activate btn-modal">Also click here</button>
+                </div>
+                <!-- Modal with :target and/or ::after/::before-->
+                <div>
+                    <button class="btn-activate btn-modal">Click here?</button>
+                </div>
+            </div>         
         </section>
     </body>
     <footer></footer>      
