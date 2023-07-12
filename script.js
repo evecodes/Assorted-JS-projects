@@ -152,6 +152,7 @@ btnRandom.addEventListener('click', e=> {
 
 
 //Modal//
+//Modal 1//
 const buttonCloseOne = document.querySelector(".btn-close-1");
 const buttonModalOne = document.querySelector(".btn-modal-1");
 const modalOne = document.querySelector(".modal-type-1");
@@ -170,3 +171,22 @@ window.onclick = function closeModal(poke) {
         modalOne.setAttribute('data-modal-active', 'off');
     }
 };
+
+//Modal 2//
+const buttonModalTwo = document.querySelector(".btn-modal-2");
+const buttonCloseTwo = document.querySelector(".btn-close-2");
+const modalTwo = document.querySelector("#modal-dialog");
+
+buttonModalTwo.addEventListener('click', e=>{
+    modalTwo.showModal();
+})
+
+buttonCloseTwo.addEventListener('click', e=> {
+    modalTwo.close();
+})
+
+// window.onclick = function closeModalTwo(click) {
+//     if (click.target === modalTwo) {
+//         modalTwo.close();
+//     }
+// };

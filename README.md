@@ -24,3 +24,5 @@ Update 08 - More project 3 js.
 Update 09 - Base html/css for project 4 added.
 
 Update 10 - Html, css and js added for project 4.
+
+Update 11 - More updates to project 4.

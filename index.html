@@ -62,27 +62,39 @@
             </div>
         </section>
         <section>
-            <h2 class="project-title">Project 4 - Modal</h2>
+            <h2 class="project-title">Project 4 - Modals</h2>
             <div class="project-box">
-                <!-- Modal with div fixed -->
+                
                 <div>
                     <div class="modal-background modal-type-1" data-modal-active="off">
                         <div class="modal-message">                            
-                            <p>This is a modal made with a modal message div in a modal background div. And you can close it with the button, or by clicking the colored background behind it.</p>
+                            <p>This is a modal made with a div in another div. You can close it with the button, or by clicking the colored background behind it.</p>
                             <button class="btn-activate btn-close-1"><img class="btn-arrow" src="icons/window-close-white.svg" alt="Close message button"></button>                           
                         </div>
                     </div>
                     <button class="btn-activate btn-modal btn-modal-1">Click here</button>
                 </div>
-                <!-- Modal with :modal -->
-                <div>
-                    <button class="btn-activate btn-modal">Also click here</button>
+                
+                <div class="modal-box">
+                    <dialog class="modal-dialog-styling" id="modal-dialog">
+                        <div class="wrapper-text">
+                            <p>This is a modal made with the html dialog tag. You can close it with the button, or with ESC.</p>
+                        </div>                        
+                        <div class="wrapper">
+                            <button class="btn-activate btn-close-2"><img class="btn-arrow" src="icons/window-close-white.svg" alt="Close message button"></button>
+                        </div>
+                    </dialog>
+                    <button class="btn-activate btn-modal btn-modal-2">Also click here</button>
                 </div>
                 <!-- Modal with :target and/or ::after/::before-->
                 <div>
+                    <div></div>
                     <button class="btn-activate btn-modal">Click here?</button>
                 </div>
             </div>         
+        </section>
+        <section>
+            <h2 class="project-title">Project 5 -</h2>
         </section>
     </body>
     <footer></footer>      
