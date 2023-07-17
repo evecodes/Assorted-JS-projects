@@ -97,6 +97,11 @@ h1, h2, p {
     cursor: pointer;
 }
 
+/* .btn-activate:focus {
+    outline: 1px rgb(0, 0, 0) solid;
+} */
+/*Keep for testing*/
+
 .btn-activate:hover {
     color: hsl(0, 0%, 100%);
     background-color: hsl(162, 95%, 40%);
@@ -143,7 +148,6 @@ h1, h2, p {
 
 
 /* Slider */
-
 .slider-box {
     width: min(100% - 3rem, 65ch);
     margin-inline: auto; 
@@ -265,4 +269,46 @@ h1, h2, p {
 .wrapper {
     position: absolute;
     inset: 0;
+}
+
+.btn-modal-3 {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.modal-box-target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(255, 166, 0, 0.9);
+    inset: 0;
+    visibility: hidden;
+    z-index: 5;
+}
+
+.modal-box-target:target{
+    visibility: visible;
+}
+
+.modal-target-message {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 10rem;
+    background-color: white;
+    border-radius: 0.25rem;
+}
+
+.modal-target-text {
+    font-size: 1.1rem; 
+    padding: 6rem 2rem 6rem 2rem;   
+}
+
+.btn-close-3 {
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    height: min-content;
 }

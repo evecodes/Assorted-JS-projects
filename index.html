@@ -78,7 +78,7 @@
                 <div class="modal-box">
                     <dialog class="modal-dialog-styling" id="modal-dialog">
                         <div class="wrapper-text">
-                            <p>This is a modal made with the html dialog tag. You can close it with the button, or with ESC.</p>
+                            <p>A modal made with the html dialog tag. You can close it with the button, or with ESC.</p>
                         </div>                        
                         <div class="wrapper">
                             <button class="btn-activate btn-close-2"><img class="btn-arrow" src="icons/window-close-white.svg" alt="Close message button"></button>
@@ -86,11 +86,20 @@
                     </dialog>
                     <button class="btn-activate btn-modal btn-modal-2">Also click here</button>
                 </div>
-                <!-- Modal with :target and/or ::after/::before-->
+
                 <div>
-                    <div></div>
-                    <button class="btn-activate btn-modal">Click here?</button>
+                    <a class="btn-activate btn-modal btn-modal-3" href="#target-1" id="target-base">Click here?</a>
                 </div>
+                <div class="modal-outerbox">                    
+                    <div class="modal-box-target" id="target-1">
+                        <div class="modal-target-message">
+                            <a href="#target-base" class="btn-activate btn-close-3">
+                                <img src="icons/window-close-white.svg" class="btn-arrow"></a>
+                            <p class="modal-target-text">Modal using css only, with :target and IDs!</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>         
         </section>
         <section>
