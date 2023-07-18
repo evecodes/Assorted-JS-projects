@@ -312,3 +312,35 @@ h1, h2, p {
     right: 4%;
     height: min-content;
 }
+
+
+/*Open and Close*/
+.question-card {
+    background-color: lightslategray;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 0.2rem;
+}
+
+.question-asked {
+    margin-bottom: 1rem;
+}
+
+.question-linebreak {
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    height: 2px;
+}
+
+.question-answer {
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+[data-answer-status = "show"] {
+    display: block;
+}
+
+[data-answer-status = "hide"] {
+    display: none;
+}

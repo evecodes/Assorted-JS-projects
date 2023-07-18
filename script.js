@@ -190,3 +190,34 @@ buttonCloseTwo.addEventListener('click', e=> {
 //         modalTwo.close();
 //     }
 // };
+
+
+//Open and Close//
+
+const buttonToggle = document.querySelector(".btn-question");
+const answerQuestion = document.querySelector(".answer-status");
+
+buttonToggle.addEventListener('click', e=> {
+    if (buttonToggle.textContent === 'Show') {
+        buttonToggle.textContent = 'Close'
+        answerQuestion.setAttribute('data-answer-status', 'show');
+        console.log('cake')
+    } else {
+        buttonToggle.textContent = 'Show'
+        answerQuestion.setAttribute('data-answer-status', 'hide');
+        console.log('lemon')
+    }    
+})
+
+//Code below also works//
+// buttonToggle.addEventListener('click', e => {
+//     if (answerQuestion.getAttribute('data-answer-status') === 'hide') {
+//         answerQuestion.setAttribute('data-answer-status', 'show');
+//         buttonToggle.textContent = 'Close';
+//         console.log('peanut')
+//     } else if (answerQuestion.getAttribute('data-answer-status') === 'show') {
+//         answerQuestion.setAttribute('data-answer-status', 'hide');
+//         buttonToggle.textContent = 'Show'
+//         console.log('cookie');
+//     }
+// })
