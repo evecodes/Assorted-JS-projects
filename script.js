@@ -195,21 +195,58 @@ buttonCloseTwo.addEventListener('click', e=> {
 //Open and Close//
 
 const buttonToggle = document.querySelector(".btn-question");
-const answerQuestion = document.querySelector(".answer-status");
+const questionButtons = document.querySelectorAll(".btn-question");
+const answerQuestions = document.querySelectorAll(".answer-status");
+const questionCards = document.querySelectorAll(".question-card")
 
-buttonToggle.addEventListener('click', e=> {
-    if (buttonToggle.textContent === 'Show') {
-        buttonToggle.textContent = 'Close'
-        answerQuestion.setAttribute('data-answer-status', 'show');
-        console.log('cake')
-    } else {
-        buttonToggle.textContent = 'Show'
-        answerQuestion.setAttribute('data-answer-status', 'hide');
-        console.log('lemon')
-    }    
-})
+//code works//
+// questionCards.forEach(singleQuestion => {
+//     const nearestButton = singleQuestion.querySelector(".btn-question");
+//     const nearestAnswer = singleQuestion.querySelector(".answer-status");
+//     nearestButton.addEventListener('click', e => {
+//         if (nearestButton.textContent === 'Show'){
+//             nearestButton.textContent = 'Close';            
+//             nearestAnswer.setAttribute('data-answer-status', 'show');
+//         } else {
+//             nearestButton.textContent = 'Show';
+//             nearestAnswer.setAttribute('data-answer-status', 'hide');
+//         }
+//         questionCards.forEach(check => {
+//             if (check !== singleQuestion && nearestButton.textContent === 'Close') {                
+//                 check.querySelector('.btn-question').textContent = 'Show';
+//                 check.querySelector('.answer-status').setAttribute('data-answer-status', 'hide');
+//             }
+//         })
+//     })
+// })
 
-//Code below also works//
+//code works//
+questionButtons.forEach(singleButton => {
+    singleButton.addEventListener('click', e=> {
+        const nearestAnswer = singleButton.closest('.question-card').querySelector('.answer-status');
+        if (singleButton.textContent === 'Show') {
+            singleButton.textContent = 'Close';            
+            nearestAnswer.setAttribute('data-answer-status', 'show');
+        } else {
+            singleButton.textContent = 'Show';
+            nearestAnswer.setAttribute('data-answer-status', 'hide');
+        }
+    })
+});
+
+//Single button, working code//
+// buttonToggle.addEventListener('click', e=> {
+//     if (buttonToggle.textContent === 'Show') {
+//         buttonToggle.textContent = 'Close'
+//         answerQuestion.setAttribute('data-answer-status', 'show');
+//         console.log('cake')
+//     } else {
+//         buttonToggle.textContent = 'Show'
+//         answerQuestion.setAttribute('data-answer-status', 'hide');
+//         console.log('lemon')
+//     }    
+// })
+
 // buttonToggle.addEventListener('click', e => {
 //     if (answerQuestion.getAttribute('data-answer-status') === 'hide') {
 //         answerQuestion.setAttribute('data-answer-status', 'show');

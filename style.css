@@ -315,8 +315,24 @@ h1, h2, p {
 
 
 /*Open and Close*/
-.question-card {
+.project-box-questions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: min(100% - 3rem, 90%);
+    margin-inline: auto;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.question-block-one > .question-card {
     background-color: lightslategray;
+}
+
+.question-block-two > .question-card {
+    background-color: orange;
+}
+
+.question-card {
     margin: 2rem;
     padding: 2rem;
     border-radius: 0.2rem;
