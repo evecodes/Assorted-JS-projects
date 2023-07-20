@@ -32,3 +32,5 @@ Update 12 - More html and css for project 4.
 Update 13 - Base for project 5 added.
 
 Update 14 - More code for project 5 added.
+
+Update 15 - Base for project 6 added, more code for project 5.

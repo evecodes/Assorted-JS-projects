@@ -194,43 +194,63 @@ buttonCloseTwo.addEventListener('click', e=> {
 
 //Open and Close//
 
+//Setup 1//
 const buttonToggle = document.querySelector(".btn-question");
 const questionButtons = document.querySelectorAll(".btn-question");
 const answerQuestions = document.querySelectorAll(".answer-status");
-const questionCards = document.querySelectorAll(".question-card")
+const questionCards = document.querySelectorAll(".question-card");
 
-//code works//
-// questionCards.forEach(singleQuestion => {
-//     const nearestButton = singleQuestion.querySelector(".btn-question");
-//     const nearestAnswer = singleQuestion.querySelector(".answer-status");
-//     nearestButton.addEventListener('click', e => {
-//         if (nearestButton.textContent === 'Show'){
-//             nearestButton.textContent = 'Close';            
-//             nearestAnswer.setAttribute('data-answer-status', 'show');
-//         } else {
-//             nearestButton.textContent = 'Show';
-//             nearestAnswer.setAttribute('data-answer-status', 'hide');
-//         }
-//         questionCards.forEach(check => {
-//             if (check !== singleQuestion && nearestButton.textContent === 'Close') {                
-//                 check.querySelector('.btn-question').textContent = 'Show';
-//                 check.querySelector('.answer-status').setAttribute('data-answer-status', 'hide');
-//             }
-//         })
-//     })
-// })
+questionCards.forEach(singleQuestion => {
+    const nearestButton = singleQuestion.querySelector(".btn-question");
+    const nearestAnswer = singleQuestion.querySelector(".answer-status");
+    nearestButton.addEventListener('click', e => {
+        if (nearestButton.textContent === 'Show'){
+            nearestButton.textContent = 'Close';            
+            nearestAnswer.setAttribute('data-answer-status', 'show');
+        } else {
+            nearestButton.textContent = 'Show';
+            nearestAnswer.setAttribute('data-answer-status', 'hide');
+        }
+        questionCards.forEach(check => {
+            if (check !== singleQuestion && nearestButton.textContent === 'Close') {                
+                check.querySelector('.btn-question').textContent = 'Show';
+                check.querySelector('.answer-status').setAttribute('data-answer-status', 'hide');
+            }
+        })
+    })
+})
 
-//code works//
-questionButtons.forEach(singleButton => {
+//Setup 2//
+const buttonToggle2 = document.querySelector(".btn-question2");
+const questionButtons2 = document.querySelectorAll(".btn-question2");
+const answerQuestions2 = document.querySelectorAll(".answer-status2");
+const questionCards2 = document.querySelectorAll(".question-card2");
+
+questionButtons2.forEach(singleButton => {
     singleButton.addEventListener('click', e=> {
-        const nearestAnswer = singleButton.closest('.question-card').querySelector('.answer-status');
+        const nearestAnswer = singleButton.closest('.question-card2').querySelector('.answer-status2');
         if (singleButton.textContent === 'Show') {
             singleButton.textContent = 'Close';            
             nearestAnswer.setAttribute('data-answer-status', 'show');
-        } else {
+        } else if (singleButton.textContent === 'Close'){
             singleButton.textContent = 'Show';
             nearestAnswer.setAttribute('data-answer-status', 'hide');
         }
+        //to solve close other when clicking one button text//
+        // questionButtons.forEach(check => {
+        //     if (check !== singleButton){
+        //         const crossCheck = check.parentElement.querySelector('.answer-status');
+        //         crossCheck.setAttribute('data-answer-status', 'hide');
+        //         if (singleButton.textContent === 'Close' && crossCheck.getAttribute !== 'show'){
+                    
+        //         }
+        //         if (crossCheck.getAttribute === 'hide'){
+        //             singleButton.textContent = 'Show';
+        //         } else if (crossCheck.getAttribute === 'show'){
+        //             singleButton.textContent = 'Close';
+        //         }                
+        //     }
+        // })
     })
 });
 
@@ -258,3 +278,6 @@ questionButtons.forEach(singleButton => {
 //         console.log('cookie');
 //     }
 // })
+
+
+//
