@@ -280,4 +280,89 @@ questionButtons2.forEach(singleButton => {
 // })
 
 
-//
+//Sorting list script//
+
+const sortingItems = [
+    {
+        id: 1,
+        catagory: "Cat",
+        title: "Cat",        
+        description: "I'm a cat",
+        img: "imgs-for-sort/amber-kipp-75715CVEJhI-unsplash.jpg",
+    },
+    {
+        id: 2,
+        catagory: "Cat",
+        title: "Cat",        
+        description: "I'm a cat",
+        img: "imgs-for-sort/kanashi-BLW_KQ0Rkn0-unsplash.jpg",
+    },
+    {
+        id: 3,
+        catagory: "Cat",
+        title: "Cat",        
+        description: "I'm a cat",
+        img: "imgs-for-sort/max-simonov-fU4YA9w5taw-unsplash.jpg",
+    },
+    {
+        id: 4,
+        catagory: "Lizard",
+        title: "Lizard",        
+        description: "I'm a lizard",
+        img: "imgs-for-sort/keith-markilie-0EebGYVIBmA-unsplash.jpg",
+    },
+    {
+        id: 5,
+        catagory: "Lizard",
+        title: "Lizard",        
+        description: "I'm a lizard",
+        img: "imgs-for-sort/verdian-chua-68hC4vYTSFo-unsplash.jpg",
+    },
+    {
+        id: 6,
+        catagory: "Lizard",
+        title: "Lizard",        
+        description: "I'm a lizard",
+        img: "imgs-for-sort/francesco-ungaro-JHypHcOObf4-unsplash.jpg",
+    },
+    {
+        id: 7,
+        catagory: "Bird",
+        title: "Bird",        
+        description: "I'm a bird",
+        img: "imgs-for-sort/austin-guhl-3pZ9HITiLZM-unsplash.jpg",
+    },
+    {
+        id: 8,
+        catagory: "Bird",
+        title: "Bird",        
+        description: "I'm a bird",
+        img: "imgs-for-sort/kevin-mueller-aeNg4YA41P8-unsplash.jpg",
+    },
+    {
+        id: 9,
+        catagory: "Bird",
+        title: "Bird",        
+        description: "I'm a bird",
+        img: "imgs-for-sort/ronan-furuta-8hIErEH5pr0-unsplash.jpg",
+    },
+]
+
+const itemsBox = document.querySelector(".items-box");
+
+window.addEventListener('DOMContentLoaded', e=> {
+    let animalBunch = sortingItems.map(item => {        
+        return `<div class="base-sorting-item">
+                    <div class="img-list-item">
+                        <img class="list-item-photo" src="${item.img}" alt="${item.title}">
+                    </div>                        
+                    <div class="list-item-text">
+                        <h3 class="title">${item.title}</h3>
+                        <p class="description">${item.description}</p>
+                    </div>
+                    <span class="list-stripe"></span>
+                </div>`
+    })
+    animalBunch = animalBunch.join('');
+    
+})
