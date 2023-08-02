@@ -7,6 +7,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important; */
 }
 
 h1 {
@@ -450,4 +453,8 @@ h1, h2, p {
     overflow: hidden;
     border-radius: 0.5rem;
     /* border: orange 2px solid; */
+}
+
+.btn-sort {
+    margin-right: 0.5rem;
 }

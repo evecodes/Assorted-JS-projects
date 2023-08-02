@@ -38,3 +38,5 @@ Update 15 - Base for project 6 added, more code for project 5.
 Update 16 - CSS and HTML base for project 6 added.
 
 Update 17 - More code for project 6 added.
+
+Update 18 - More code for project 6 added, with dynamic parts.
