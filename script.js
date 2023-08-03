@@ -408,7 +408,10 @@ function displayAnimals(sortingItems){
                     <span class="list-stripe"></span>
                 </div>`;
     });
-    animalBunch = animalBunch.join('');
+    animalBunch = animalBunch.join("");
     itemsBox.innerHTML = animalBunch;
 }
-//To add? Color button change depending on selected category
+//To add? Color button change depending on selected 
+
+
+//Video with overlay and preloader
