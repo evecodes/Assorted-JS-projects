@@ -3,6 +3,10 @@
     --hsl-random: hsl(0, 0%, 0%);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -117,6 +121,27 @@ h1, h2, p {
 .btn-margin {
     margin-top: 0.5rem;
 }
+
+/*Navigation*/
+.main-title {
+    font-size: 2.5rem;
+}
+
+.project-links {
+    margin: 2rem 1rem 3rem 1rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 1rem;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
 
 /*Simple counter*/
 .counter-box {
@@ -489,4 +514,23 @@ h1, h2, p {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/*Footer*/
+.btn-pagemove-wrapper {
+    position: relative;
+}
+
+.btn-pagemove-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+}
+
+.btn-up, .btn-down {    
+    font-size: 2rem;
+    padding: 0.2rem 1rem 0.5rem 1rem;
 }

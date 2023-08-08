@@ -415,3 +415,19 @@ function displayAnimals(sortingItems){
 
 
 //Video with overlay and preloader
+
+
+
+//Scroll to top or bottom of the page when corresponding button is clicked//
+const btnUp = document.querySelector(".btn-up");
+const btnDown = document.querySelector(".btn-down");
+const scrollCheck = document.documentElement;
+
+
+btnUp.addEventListener('click', e=> {    
+    scrollCheck.scrollTop = 0;
+});
+
+btnDown.addEventListener('click', e=>{
+    scrollCheck.scrollTop = scrollCheck.scrollHeight;
+})

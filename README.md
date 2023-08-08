@@ -44,3 +44,5 @@ Update 18 - More code for project 6 added, with dynamic parts.
 Update 19 - Base code for project 7 added.
 
 Update 20 - More code for project 7 added.
+
+Update 21 - Added scroll to top and scroll to bottom of the page buttons, and navigation to the seperate projects.
