@@ -66,7 +66,28 @@ h1, h2, p {
 }
 
 
-/*Color Randomizer*/
+/*---Navigation---*/
+.main-title {
+    font-size: 2.5rem;
+}
+
+.project-links {
+    margin: 2rem 1rem 3rem 1rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 1rem;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+
+/*---Color Randomizer---*/
 .container-color-randomizer {
     min-height: 10rem;
     min-width: 10rem;    
@@ -122,28 +143,8 @@ h1, h2, p {
     margin-top: 0.5rem;
 }
 
-/*Navigation*/
-.main-title {
-    font-size: 2.5rem;
-}
 
-.project-links {
-    margin: 2rem 1rem 3rem 1rem;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    text-decoration: none;
-    list-style: none;
-    gap: 1rem;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: black;
-}
-
-
-/*Simple counter*/
+/*---Simple counter---*/
 .counter-box {
     max-width: 60%;
     padding: 2rem 0 2rem 0;
@@ -175,7 +176,7 @@ h1, h2, p {
 }
 
 
-/* Slider */
+/*---Slider---*/
 .slider-box {
     width: min(100% - 3rem, 65ch);
     margin-inline: auto; 
@@ -217,7 +218,8 @@ h1, h2, p {
     height: 2rem;
 }
 
-/*Modal*/
+
+/*---Modal---*/
 .btn-modal {
     font-size: 1.2rem;
     font-weight: 600;
@@ -342,7 +344,7 @@ h1, h2, p {
 }
 
 
-/*Open and Close*/
+/*---Open and Close---*/
 .project-box-questions {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -389,7 +391,8 @@ h1, h2, p {
     display: none;
 }
 
-/*Sort/filter*/
+
+/*---Sort/filter---*/
 .project-box-list-items {
     width: min(100% - 3rem, 75%);
     margin-inline: auto;
@@ -485,7 +488,7 @@ h1, h2, p {
 }
 
 
-/*Video overlay and preloader*/
+/*---Video overlay and preloader---*/
 .video-box {
     position: relative;
     text-align: center;
@@ -516,7 +519,35 @@ h1, h2, p {
     display: block;
 }
 
-/*Footer*/
+
+/*---Pie chart---*/
+.pie-chart-box {
+    margin-bottom: 6rem;
+}
+
+.static-pie-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: auto;
+    margin: auto;
+}
+
+.static-pie-chart > p {
+    margin-bottom: 1rem;
+}
+
+.canvas-pie-static {
+    width: 100%;
+    height: 100%;
+    /* outline: black solid 1px; */
+}
+/*Having width and height of the canvas in css in percentage makes the chart responsive, combined with a width, height and margin on its container*/
+
+
+/*---Footer---*/
 .btn-pagemove-wrapper {
     position: relative;
 }

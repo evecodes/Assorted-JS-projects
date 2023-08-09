@@ -1,4 +1,4 @@
-//Randomize rgb and hsl//
+//-----Randomize rgb and hsl-----//
 const boxColorRgb = document.querySelector(".box-color-rgb");
 const btnRandomizeRgb = document.querySelector("#randomize-rgb");
 const rgbTextNumber = document.querySelector(".rgb-number")
@@ -43,7 +43,7 @@ function generateHslColors() {
 btnRandomizeHsl.addEventListener("click", generateHslColors);
 
 
-//Simple counter//
+//-----Simple counter-----//
 const counterNumber = document.querySelector(".counter-value");
 const counterBtns = document.querySelectorAll(".btn-counter");
 
@@ -70,7 +70,7 @@ counterBtns.forEach(addListener => {
 })
 
 
-//Slider - single item slot//
+//-----Slider - single item slot-----//
 //Local data for the slides//
 const singleSliderSlides = [
     {
@@ -151,7 +151,7 @@ btnRandom.addEventListener('click', e=> {
 });
 
 
-//Modal//
+//-----Modal-----//
 //Modal 1//
 const buttonCloseOne = document.querySelector(".btn-close-1");
 const buttonModalOne = document.querySelector(".btn-modal-1");
@@ -192,7 +192,7 @@ buttonCloseTwo.addEventListener('click', e=> {
 // };
 
 
-//Open and Close//
+//-----Open and Close-----//
 
 //Setup 1//
 const buttonToggle = document.querySelector(".btn-question");
@@ -414,11 +414,71 @@ function displayAnimals(sortingItems){
 //To add? Color button change depending on selected 
 
 
-//Video with overlay and preloader
+//-----Video with overlay and preloader-----//
 
 
+//-----Pie chart-----//
+//Static pie chart//
+const staticCanvas = document.querySelector("#static-pie");
+const canvasShape = staticCanvas.getContext("2d");
 
-//Scroll to top or bottom of the page when corresponding button is clicked//
+const staticInputs = [
+    {
+        id: 0,
+        type: "Apple",
+        amount: 289,
+        color: "green",
+    },
+    {
+        id: 1,
+        type: "Orange",
+        amount: 147,
+        color: "orange",
+    },
+    {
+        id: 2,
+        type: "Lemon",
+        amount: 208,
+        color: "yellow",
+    },
+    {
+        id: 3,
+        type: "Strawberry",
+        amount: 99,
+        color: "red",
+    },
+    {
+        id: 4,
+        type: "Blueberry",
+        amount: 114,
+        color: "darkblue",
+    },
+]
+
+let sumOfFruits = 0;
+let allTheFruits = staticInputs.reduce((sumOfFruits, {amount}) => sumOfFruits + amount, 0);
+let currentAngle = 0;
+
+console.log(allTheFruits);
+
+for (let pieSlice of staticInputs) {
+    let anglePart = (pieSlice.amount / allTheFruits) * 2 * Math.PI;
+    canvasShape.beginPath();
+    canvasShape.arc(200, 200, 200, currentAngle, currentAngle + anglePart);
+    currentAngle += anglePart;
+    canvasShape.lineTo(200, 200);
+    canvasShape.fillStyle = pieSlice.color;
+    canvasShape.fill();    
+}
+//To fit the pie onto the canvas, size canvas is sum of the two lineTo values//
+
+//temp save
+    // canvasShape.font = "20px Arial";
+    // canvasShape.fillText(pieSlice.type, 200, 200);
+    // canvasShape.textAlign = "center";
+
+
+//-----Scroll to top or bottom of the page when corresponding button is clicked-----//
 const btnUp = document.querySelector(".btn-up");
 const btnDown = document.querySelector(".btn-down");
 const scrollCheck = document.documentElement;
