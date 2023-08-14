@@ -459,8 +459,6 @@ let sumOfFruits = 0;
 let allTheFruits = staticInputs.reduce((sumOfFruits, {amount}) => sumOfFruits + amount, 0);
 let currentAngle = 0;
 
-console.log(allTheFruits);
-
 for (let pieSlice of staticInputs) {
     let anglePart = (pieSlice.amount / allTheFruits) * 2 * Math.PI;
     canvasShape.beginPath();
@@ -476,6 +474,27 @@ for (let pieSlice of staticInputs) {
     // canvasShape.font = "20px Arial";
     // canvasShape.fillText(pieSlice.type, 200, 200);
     // canvasShape.textAlign = "center";
+
+
+//-----Dynamic date-----//
+//Current year//
+const currentYear = document.querySelector("#current-year");
+
+currentYear.textContent = new Date().getFullYear();
+
+//Current date//
+const currentDate = document.querySelector("#current-date");
+const date = new Date();
+
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+
+currentDate.textContent = `${day}-${month}-${year}`;
+
+//Current date locale//
+const currentDateLocale = document.querySelector("#current-date-locale");
+currentDateLocale.textContent = new Date().toLocaleDateString("nl-NL");
 
 
 //-----Scroll to top or bottom of the page when corresponding button is clicked-----//

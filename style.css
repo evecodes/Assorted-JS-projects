@@ -147,12 +147,12 @@ h1, h2, p {
 /*---Simple counter---*/
 .counter-box {
     max-width: 60%;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 2rem 2rem 2rem;
     background-color: rgb(145, 145, 145);
     margin-inline: auto;
 }
 
-.counter-box > p {    
+.counter-box > p, .counter-box > span {    
     font-size: 2rem;
 }
 
@@ -545,6 +545,11 @@ h1, h2, p {
     /* outline: black solid 1px; */
 }
 /*Having width and height of the canvas in css in percentage makes the chart responsive, combined with a width, height and margin on its container*/
+
+/*Date and time*/
+.highlight {
+    color: white;
+}
 
 
 /*---Footer---*/
