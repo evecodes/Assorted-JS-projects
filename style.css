@@ -519,6 +519,40 @@ h1, h2, p {
     display: block;
 }
 
+.button-pauze-start {
+    border-radius: 0.3rem;
+    cursor: pointer;
+    position: absolute;
+    left: 2%;
+    bottom: 5%;
+    font-size: 2rem;
+    font-weight: 500;
+    width: min-content;
+    z-index: 5;
+    color: black;
+    background-color: white;
+    outline: transparent;
+    border: 4px white solid;
+}
+
+.button-pauze-start:hover {
+    border: 4px lightslategray solid;
+    background-color: lightslategray;
+}
+
+.button-pauze-start:active {
+    border: 4px mediumspringgreen solid;
+    background-color: mediumspringgreen;
+}
+
+[data-btn-controls-active="on"] {
+    display: flex;
+}
+
+[data-btn-controls-active="off"] {
+    display: none;
+}
+
 
 /*---Pie chart---*/
 .pie-chart-box {
