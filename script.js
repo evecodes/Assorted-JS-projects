@@ -419,17 +419,23 @@ const videoButton = document.querySelector('.button-pauze-start');
 const backgroundVideo = document.querySelector('.video-item');
 const buttonPauze = document.querySelector('.btn-pauze');
 const buttonStart = document.querySelector('.btn-start');
+const preloaderVideo = document.querySelector('.preloader-video');
 
 videoButton.addEventListener('click', e=> {
     if (buttonPauze.getAttribute('data-btn-controls-active') === 'on'){
         buttonPauze.setAttribute('data-btn-controls-active', 'off');
         buttonStart.setAttribute('data-btn-controls-active', 'on');
+        backgroundVideo.pause();
     } else if (buttonPauze.getAttribute('data-btn-controls-active') === 'off'){
         buttonPauze.setAttribute('data-btn-controls-active', 'on');
         buttonStart.setAttribute('data-btn-controls-active', 'off');
+        backgroundVideo.play();
     }    
-})
+});
 
+window.addEventListener('load', e=> {
+    preloaderVideo.classList.add("preloader-hide");
+});
 
 
 //-----Pie chart-----//
