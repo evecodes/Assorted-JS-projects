@@ -606,6 +606,21 @@ h1, h2, p {
     color: white;
 }
 
+/*Info tabs*/
+.project-box-tabs {
+    /* display: grid; */
+    width: min(100% - 3rem, 75%);
+    margin-inline: auto;
+    margin-bottom: 6rem;
+    text-align: center;
+    border: 2px black solid;
+}
+
+.tab-item-img > img {
+    width: 20rem;
+    height: auto;
+}
+
 
 /*---Footer---*/
 .btn-pagemove-wrapper {
