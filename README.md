@@ -7,46 +7,48 @@
 
 Update 01 - Base files added.
 
-Update 02 - Base for project 1 added.
+Update 02 - Base for color RGB/HSL randomizer project added.
 
-Update 03 - More css and js for project 1 added.
+Update 03 - More css and js for color RGB/HSL randomizer project added.
 
-Update 04 - Base for project 2 added.
+Update 04 - Base for simple counter project added.
 
-Update 05 - More css and js for project 2 added.
+Update 05 - More css and js for simple counter project added.
 
-Update 06 - Base for project 3 added.
+Update 06 - Base for single slider item project added.
 
-Update 07 - More css and js for project 3 added.
+Update 07 - More css and js for single slider item project added.
 
-Update 08 - More project 3 js.
+Update 08 - More single slider item project js.
 
-Update 09 - Base html/css for project 4 added.
+Update 09 - Base html/css for modals project added.
 
-Update 10 - Html, css and js added for project 4.
+Update 10 - Html, css and js added for modals project.
 
-Update 11 - More updates to project 4.
+Update 11 - More updates to modals project.
 
-Update 12 - More html and css for project 4.
+Update 12 - More html and css for modals project.
 
-Update 13 - Base for project 5 added.
+Update 13 - Base for question open and close project added.
 
-Update 14 - More code for project 5 added.
+Update 14 - More code for question open and close project added.
 
-Update 15 - Base for project 6 added, more code for project 5.
+Update 15 - Base for filter through data project added, more code for project question open and close.
 
-Update 16 - CSS and HTML base for project 6 added.
+Update 16 - CSS and HTML base for filter through data project added.
 
-Update 17 - More code for project 6 added.
+Update 17 - More code for filter through data project added.
 
-Update 18 - More code for project 6 added, with dynamic parts.
+Update 18 - More code for filter through data project added, with dynamic parts.
 
-Update 19 - Base code for project 7 added.
+Update 19 - Base code for video overlay and preloader project added.
 
-Update 20 - More code for project 7 added.
+Update 20 - More code for video overlay and preloader project added.
 
 Update 21 - Added scroll to top and scroll to bottom of the page buttons, and navigation to the seperate projects.
 
-Update 22 - Added code to project 8.
+Update 22 - Added code to static pie chart project.
 
-Update 23 - Code for project 9 added.
+Update 23 - Code for dynamic date project added.
+
+Update 24 - Code for video overlay and preloader project added, base code for tabs project added.
