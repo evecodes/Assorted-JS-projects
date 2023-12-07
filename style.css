@@ -16,6 +16,10 @@ html {
     outline: solid #f00 1px !important; */
 }
 
+img {
+    display: block;
+}
+
 h1 {
     margin-top: 1rem;
 }
@@ -608,17 +612,45 @@ h1, h2, p {
 
 /*Info tabs*/
 .project-box-tabs {
-    /* display: grid; */
+    display: flex;
+    /* flex-grow: 1; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: min(100% - 3rem, 75%);
+    height: 40rem;
     margin-inline: auto;
     margin-bottom: 6rem;
     text-align: center;
     border: 2px black solid;
 }
 
-.tab-item-img > img {
-    width: 20rem;
-    height: auto;
+.tab-item-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.tab-item-text {
+    width: 40ch;
+    background-color: gray;
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+.tab-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.25rem;
+}
+
+.tab-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 
