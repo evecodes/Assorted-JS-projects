@@ -16,9 +16,9 @@ html {
     outline: solid #f00 1px !important; */
 }
 
-img {
+/* img {
     display: block;
-}
+} */
 
 h1 {
     margin-top: 1rem;
@@ -605,20 +605,20 @@ h1, h2, p {
 }
 /*Having width and height of the canvas in css in percentage makes the chart responsive, combined with a width, height and margin on its container*/
 
-/*Date and time*/
+
+/*---Date and time---*/
 .highlight {
     color: white;
 }
 
-/*Info tabs*/
+
+/*---Info tabs---*/
 .project-box-tabs {
     display: flex;
-    /* flex-grow: 1; */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: min(100% - 3rem, 75%);
-    height: 40rem;
     margin-inline: auto;
     margin-bottom: 6rem;
     text-align: center;
@@ -626,31 +626,66 @@ h1, h2, p {
 }
 
 .tab-item-img {
-    height: 100%;
-    object-fit: cover;
-}
-
-.tab-item-text {
-    width: 40ch;
-    background-color: gray;
-    padding: 0rem 2rem 2rem 2rem;
-}
-
-.tab-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    list-style: none;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    font-size: 1.25rem;
+    width: 30rem;
 }
 
 .tab-image {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.tab-item-text {
+    display: flex;
+    flex-direction: column;
+    width: 40ch;
+    background-color: rgb(224, 224, 224);
+    margin: 2rem;
+}
+
+.tab-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 1.25rem;
+    background-color: white;
+}
+
+.tab-row > li {
+    border-radius: 0.5rem 0.5rem 0 0;
+    flex-grow: 1;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.tab-highlight-active {
+    background-color: rgb(224, 224, 224);
+}
+
+.tab-row > li:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.tab-info-text {
+    padding: 1rem;
+}
+
+.tab-solo {
+    display: none;
+}
+
+.tab-solo > h3 {
+    padding: 0.5rem;
+}
+
+.tab-solo > P {
+    padding: 1rem;
+}
+
+.tab-active {
+    display: block;
 }
 
 

@@ -52,3 +52,5 @@ Update 22 - Added code to static pie chart project.
 Update 23 - Code for dynamic date project added.
 
 Update 24 - Code for video overlay and preloader project added, base code for tabs project added.
+
+Update 25 - Code for tabs project added.

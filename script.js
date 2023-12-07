@@ -518,6 +518,25 @@ const currentDateLocale = document.querySelector("#current-date-locale");
 currentDateLocale.textContent = new Date().toLocaleDateString("nl-NL");
 
 
+//-----Tab switching-----//
+const tabTop = document.querySelectorAll('[data-tab]');
+const tabText = document.querySelectorAll('.tab-solo');
+
+tabTop.forEach(pokeTab => {
+    pokeTab.addEventListener('click', e=> {
+        const targetTab = document.querySelector(pokeTab.dataset.tab);
+        tabText.forEach(tabContent => {
+            tabContent.classList.remove('tab-active');
+        })
+        tabTop.forEach(solo => {
+            solo.classList.remove('tab-highlight-active');
+        })
+        pokeTab.classList.add('tab-highlight-active');
+        targetTab.classList.add('tab-active');
+    })
+});
+
+
 //-----Scroll to top or bottom of the page when corresponding button is clicked-----//
 const btnUp = document.querySelector(".btn-up");
 const btnDown = document.querySelector(".btn-down");
