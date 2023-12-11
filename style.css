@@ -24,7 +24,7 @@ h1 {
     margin-top: 1rem;
 }
 
-h1, h2, p {
+h1, h2, h3, h4, p {
     text-align: center;
 }
 
@@ -76,7 +76,8 @@ h1, h2, p {
 }
 
 .project-links {
-    margin: 2rem 1rem 3rem 1rem;
+    margin: 2rem 2rem 3rem 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -88,6 +89,20 @@ h1, h2, p {
     align-items: center;
     justify-content: center;
     color: black;
+    background-color: lightgrey;
+}
+
+.project-links a {
+    color: black;
+    text-decoration: none;
+    border: solid black 1px;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    background-color: white;
+}
+
+.project-links a:hover, .project-links a:focus {
+    background-color:rgba(255, 166, 0, 0.9);
 }
 
 
@@ -129,10 +144,10 @@ h1, h2, p {
     cursor: pointer;
 }
 
-/* .btn-activate:focus {
-    outline: 1px rgb(0, 0, 0) solid;
-} */
-/*Keep for testing*/
+.btn-activate:focus {
+    background-color:rgba(255, 166, 0, 0.9);
+}
+/*Html dialogue tag, focus auto?*/
 
 .btn-activate:hover {
     color: hsl(0, 0%, 100%);
@@ -363,7 +378,7 @@ h1, h2, p {
 }
 
 .question-block-two > .question-card2 {
-    background-color: orange;
+    background-color: rgb(255, 184, 53);
 }
 
 .question-card, .question-card2 {
@@ -620,13 +635,14 @@ h1, h2, p {
     flex-wrap: wrap;
     width: min(100% - 3rem, 75%);
     margin-inline: auto;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
     text-align: center;
     border: 2px black solid;
 }
 
 .tab-item-img {
-    width: 30rem;
+    width: 20rem;
 }
 
 .tab-image {
@@ -636,7 +652,7 @@ h1, h2, p {
     display: block;
 }
 
-.tab-item-text {
+.tab-item-text, .tab-item-text-s2 {
     display: flex;
     flex-direction: column;
     width: 40ch;
@@ -660,7 +676,7 @@ h1, h2, p {
     cursor: pointer;
 }
 
-.tab-highlight-active {
+.tab-highlight-active, .tab-highlight-active-s2 {
     background-color: rgb(224, 224, 224);
 }
 
@@ -672,19 +688,19 @@ h1, h2, p {
     padding: 1rem;
 }
 
-.tab-solo {
+.tab-solo, .tab-solo-s2 {
     display: none;
 }
 
-.tab-solo > h3 {
+.tab-solo > h3, .tab-solo-s2 > h3 {
     padding: 0.5rem;
 }
 
-.tab-solo > P {
+.tab-solo > p, .tab-solo-s2 > p {
     padding: 1rem;
 }
 
-.tab-active {
+.tab-active, .tab-active-s2 {
     display: block;
 }
 

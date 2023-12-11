@@ -519,6 +519,8 @@ currentDateLocale.textContent = new Date().toLocaleDateString("nl-NL");
 
 
 //-----Tab switching-----//
+
+//Setup 1//
 const tabTop = document.querySelectorAll('[data-tab]');
 const tabText = document.querySelectorAll('.tab-solo');
 
@@ -535,6 +537,27 @@ tabTop.forEach(pokeTab => {
         targetTab.classList.add('tab-active');
     })
 });
+
+//Setup 2//
+const tabItemBtns = document.querySelectorAll('.tab-item');
+const tabItemTextBox = document.querySelector('.tab-item-text-s2');
+const tabItemsContent = document.querySelectorAll('.tab-solo-s2');
+
+tabItemTextBox.addEventListener('click', e=>{
+    const checkId = e.target.dataset.idTab;
+    if(checkId){
+        tabItemBtns.forEach(soloTabBtn => {
+            soloTabBtn.classList.remove('tab-highlight-active-s2');
+            e.target.classList.add('tab-highlight-active-s2');
+        });
+        tabItemsContent.forEach(tabSoloSet2 => {
+            tabSoloSet2.classList.remove('tab-active-s2');
+        })
+
+        const tabCheckId = document.getElementById(checkId);
+        tabCheckId.classList.add('tab-active-s2');
+    }
+})
 
 
 //-----Scroll to top or bottom of the page when corresponding button is clicked-----//
