@@ -56,3 +56,5 @@ Update 24 - Code for video overlay and preloader project added, base code for ta
 Update 25 - Code for tabs project added.
 
 Update 26 - Second setup and code added for tabs project, and other minor adjustments.
+
+Update 27 - Base code for countdown project added.

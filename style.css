@@ -641,6 +641,10 @@ h1, h2, h3, h4, p {
     border: 2px black solid;
 }
 
+.project-box-tabs:last-child{
+    margin-bottom: 6rem;
+}
+
 .tab-item-img {
     width: 20rem;
 }
