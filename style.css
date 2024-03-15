@@ -65,6 +65,10 @@ h1, h2, h3, h4, p {
     justify-content: space-between;
 }
 
+.flex-justify-center {
+    justify-content: center;
+}
+
 .flex-align-center {
     align-items: center;
 }
@@ -706,6 +710,27 @@ h1, h2, h3, h4, p {
 
 .tab-active, .tab-active-s2 {
     display: block;
+}
+
+
+/*---Countdown---*/
+.countdown-image > img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.countdown-title{
+    margin: 1rem;
+}
+
+.countdown-box {
+    margin: 2rem;
+}
+
+.countdown-part > p {
+    font-size: 2rem;
 }
 
 

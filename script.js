@@ -560,6 +560,33 @@ tabItemTextBox.addEventListener('click', e=>{
 })
 
 
+//-----Countdown-----//
+const countdownMonths = [
+    "January",
+    "February",
+    "March", 
+    "April",
+    "May",
+    "June",
+    "July", 
+    "August",
+    "September",
+    "October", 
+    "November", 
+    "December",
+];
+
+const countdownWeekdays = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday", 
+    "Saturday",
+    "Sunday",
+];
+
+
 //-----Scroll to top or bottom of the page when corresponding button is clicked-----//
 const btnUp = document.querySelector(".btn-up");
 const btnDown = document.querySelector(".btn-down");
