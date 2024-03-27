@@ -587,7 +587,21 @@ const countdownWeekdays = [
 ];
 
 const countdownBox = document.querySelector(".countdown-box");
+const countdownTitle = document.querySelector(".countdown-title")
 const countdownItems = document.querySelectorAll(".countdown-part p");
+
+//Deadline date setup//
+let deadlineDate = new Date("2024-08-17T12:00:00");
+let anotherDeadlineDate = new Date(2024, 9, 12, 6, 0, 0) //Months run from 0-11//
+console.log(deadlineDate, anotherDeadlineDate);
+
+const deadlineYear = deadlineDate.getFullYear();
+const deadlineDay = `TEMP`
+const deadlineHours = deadlineDate.getHours();
+const deadlineMinutes = deadlineDate.getMinutes();
+
+countdownTitle.textContent = `Kitty Countdown ends on ${deadlineDay},  ${deadlineYear} ${deadlineHours}:${deadlineMinutes}.`
+
 
 
 //-----Scroll to top or bottom of the page when corresponding button is clicked-----//
