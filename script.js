@@ -586,6 +586,9 @@ const countdownWeekdays = [
     "Sunday",
 ];
 
+const countdownBox = document.querySelector(".countdown-box");
+const countdownItems = document.querySelectorAll(".countdown-part p");
+
 
 //-----Scroll to top or bottom of the page when corresponding button is clicked-----//
 const btnUp = document.querySelector(".btn-up");
