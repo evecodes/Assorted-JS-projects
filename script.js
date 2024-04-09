@@ -591,16 +591,27 @@ const countdownTitle = document.querySelector(".countdown-title")
 const countdownItems = document.querySelectorAll(".countdown-part p");
 
 //Deadline date setup//
-let deadlineDate = new Date("2024-08-17T12:00:00");
-let anotherDeadlineDate = new Date(2024, 9, 12, 6, 0, 0) //Months run from 0-11//
-console.log(deadlineDate, anotherDeadlineDate);
+let deadlineDate = new Date("2026-08-17T08:30:00");
+let anotherDeadlineDate = new Date(2026, 9, 12, 6, 0, 0) //Months run from 0-11//
+// console.log(deadlineDate, anotherDeadlineDate);
 
-const deadlineYear = deadlineDate.getFullYear();
-const deadlineDay = `TEMP`
-const deadlineHours = deadlineDate.getHours();
-const deadlineMinutes = deadlineDate.getMinutes();
+let deadlineYear = deadlineDate.getFullYear();
+let deadlineDay = `TEMP`
+let deadlineHours = deadlineDate.getHours();
+let deadlineMinutes = deadlineDate.getMinutes();
 
-countdownTitle.textContent = `Kitty Countdown ends on ${deadlineDay},  ${deadlineYear} ${deadlineHours}:${deadlineMinutes}.`
+function deadlineDateCheck(){
+    if (deadlineHours < 10){
+        deadlineHours = "0" + deadlineHours;
+    }
+    if (deadlineMinutes < 10){
+        deadlineMinutes = "0" + deadlineMinutes;
+    }
+}
+
+deadlineDateCheck();
+
+countdownTitle.textContent = `Kitty Countdown ends on ${deadlineDay},  ${deadlineYear} ${deadlineHours}:${deadlineMinutes} CET.`
 
 
 
